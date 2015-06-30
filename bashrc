@@ -56,7 +56,7 @@ wocker_run_usage() {
   echo 'Run a new container'
   echo ''
   echo '  --name=""     Assign a name to the container. If omitted, it will be a random name.'
-  echo '  IMAGE[:TAG]   Docker image. If omitted, it will be wocker/wocker:latest.'
+  echo '  IMAGE[:TAG]   Docker image. If omitted, it will be italoag/wpdocker:latest.'
 }
 
 wocker_rm_usage() {
@@ -129,7 +129,7 @@ wocker() {
 
   local version='0.5.0'
   local red=31
-  local image='wocker/wocker:latest'
+  local image='italoag/wpdocker:latest'
   local cname
   local ports
   local cid
@@ -242,7 +242,7 @@ wocker() {
         wocker_update_usage
       else
         curl -O https://raw.githubusercontent.com/italoag/wocker-bashrc/master/bashrc && mv -f bashrc ~/.bashrc && source ~/.bashrc
-        docker pull wocker/wocker:latest
+        docker pull italoag/wpdocker:latest
       fi
       ;;
 
