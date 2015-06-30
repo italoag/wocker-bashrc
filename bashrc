@@ -241,7 +241,7 @@ wocker() {
       if [[ "$2" = '--help' ]]; then
         wocker_update_usage
       else
-        curl -O https://raw.githubusercontent.com/wckr/wocker-bashrc/master/bashrc && mv -f bashrc ~/.bashrc && source ~/.bashrc
+        curl -O https://raw.githubusercontent.com/italoag/wocker-bashrc/master/bashrc && mv -f bashrc ~/.bashrc && source ~/.bashrc
         docker pull wocker/wocker:latest
       fi
       ;;

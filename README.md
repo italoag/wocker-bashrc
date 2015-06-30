@@ -23,7 +23,7 @@ $ wocker -h
 $ wocker update
 ```
 
-### Run a new Wocker container using "ixkaito/wocker:latest"
+### Run a new Wocker container using "italoag/wpdocker:latest"
 
 ```
 $ wocker run
@@ -56,7 +56,7 @@ $ wocker run <image>
 e.g.
 
 ```
-$ wocker run wocker/wocker:centos6
+$ wocker run italoag/wpdocker:centos6
 ```
 
 ### Use another docker image to run a new Wocker container and assign a name
@@ -74,7 +74,7 @@ $ wocker run --name=<containername> <image>
 e.g.
 
 ```
-$ wocker run --name wordpress wocker/wocker:centos6
+$ wocker run --name wordpress italoag/wpdocker:centos6
 ```
 
 ### Remove all containers and files
